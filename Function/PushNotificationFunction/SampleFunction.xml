@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PushNotificationFunction</name>
+    </assembly>
+    <members>
+        <member name="M:PushNotificationFunction.Controllers.AndroidTokensController.GetTokens(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Get android Tokens
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PushNotificationFunction.Controllers.AndroidTokensController.Create(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Register android Token
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PushNotificationFunction.Controllers.IOSTokensController.GetTokens(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Get iOS Tokens
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PushNotificationFunction.Controllers.IOSTokensController.Create(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Register iOS Token
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PushNotificationFunction.Controllers.NotificationsController.Send(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger,Microsoft.Azure.WebJobs.ExecutionContext)">
+            <summary>
+            Send Notification
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PushNotificationFunction.Controllers.V1.AndroidTokensController.Create(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Register android Token
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PushNotificationFunction.Controllers.V1.NotificationsController.Send(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger,Microsoft.Azure.WebJobs.ExecutionContext)">
+            <summary>
+            Send Notification
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PushNotificationFunction.Helpers.HttpRequestExtensions.GetJsonBody``2(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            Returns the deserialized request body with validation information.
+            </summary>
+            <typeparam name="T">Type used for deserialization of the request body.</typeparam>
+            <typeparam name="V">
+            Validator used to validate the deserialized request body.
+            </typeparam>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PushNotificationFunction.Helpers.HttpRequestExtensions.GetJsonBody``1(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            Returns the deserialized request body.
+            </summary>
+            <typeparam name="T">Type used for deserialization of the request body.</typeparam>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PushNotificationFunction.Helpers.ValidationExtensions.ToBadRequest``1(PushNotificationFunction.Models.ValidatableRequest{``0})">
+            <summary>
+            Creates a <see cref="T:Microsoft.AspNetCore.Mvc.BadRequestObjectResult"/> containing a collection
+            of minimal validation error details.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PushNotificationFunction.Models.SendNotification.UserIds">
+            <summary>
+            Usernames dos usuários ou códigos identificadores.
+            </summary>
+        </member>
+        <member name="P:PushNotificationFunction.Models.SendNotification.CompanyId">
+            <summary>
+            Código da empresa.
+            </summary>
+        </member>
+        <member name="P:PushNotificationFunction.Models.SendNotification.ApplicationId">
+            <summary>
+            Código da aplicação.
+            </summary>
+        </member>
+        <member name="P:PushNotificationFunction.Models.SendNotification.Title">
+            <summary>
+            Título da notificação.
+            </summary>
+        </member>
+        <member name="P:PushNotificationFunction.Models.SendNotification.Message">
+            <summary>
+            Mensagem da notificação.
+            </summary>
+        </member>
+        <member name="P:PushNotificationFunction.Models.SendNotification.Data">
+            <summary>
+            Payload de dados
+            </summary>
+        </member>
+        <member name="P:PushNotificationFunction.Models.ValidatableRequest`1.Value">
+            <summary>
+            The deserialized value of the request.
+            </summary>
+        </member>
+        <member name="P:PushNotificationFunction.Models.ValidatableRequest`1.IsValid">
+            <summary>
+            Whether or not the deserialized value was found to be valid.
+            </summary>
+        </member>
+        <member name="P:PushNotificationFunction.Models.ValidatableRequest`1.Errors">
+            <summary>
+            The collection of validation errors.
+            </summary>
+        </member>
+    </members>
+</doc>
